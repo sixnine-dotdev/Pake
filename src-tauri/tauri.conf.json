@@ -5,12 +5,19 @@
   "app": {
     "withGlobalTauri": true,
     "trayIcon": {
-      "iconPath": "png/weread_512.png",
+      "iconPath": "src-tauri/icons/icon_512.png",
       "iconAsTemplate": false,
       "id": "pake-tray"
     }
   },
   "build": {
     "frontendDist": "../dist"
+  },
+  "bundle": {
+    "icon": [
+      "src-tauri/icons/icon.ico",
+      "src-tauri/icons/icon_256.ico",
+      "src-tauri/icons/icon_32.ico"
+    ]
   }
 }
